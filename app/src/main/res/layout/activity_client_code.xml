@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="user.example.hs_pc013.switchapi.ClientCode">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Connect"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edtIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress|number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="56dp" />
+
+    <EditText
+        android:id="@+id/edtPORT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtIP"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="56dp" />
+
+    <TextView
+        android:id="@+id/txtIP"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:text="IP"
+        android:textAllCaps="false"
+        android:textColor="#c90000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtIP"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginRight="24dp" />
+
+    <TextView
+        android:id="@+id/txtPORT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Port"
+        android:textAllCaps="false"
+        android:textColor="#c90000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtPORT"
+        app:layout_constraintTop_toBottomOf="@+id/edtIP"
+        android:layout_marginRight="24dp" />
+
+    <Button
+        android:id="@+id/btnTry"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_true"
+        android:text="Connect"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/btnList"
+        app:layout_constraintTop_toBottomOf="@+id/edtPORT" />
+
+    <Button
+        android:id="@+id/btnDis"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_false"
+        android:text="Disconnect"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/btnList"
+        app:layout_constraintTop_toBottomOf="@+id/edtPORT" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_true"
+        android:text="Device List"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTry"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <ProgressBar
+        android:id="@+id/connectProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+</android.support.constraint.ConstraintLayout>

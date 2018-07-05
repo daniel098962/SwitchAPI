@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="user.example.hs_pc013.switchapi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_cctch12332"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="user.example.hs_pc013.switchapi.MainActivity">
+        </activity>
+        <activity android:name="user.example.hs_pc013.switchapi.AV_Setting" />
+        <activity android:name="user.example.hs_pc013.switchapi.AV_Setting_MX" />
+        <activity android:name="user.example.hs_pc013.switchapi.ClientCode" />
+        <activity android:name="user.example.hs_pc013.switchapi.HX_2544" />
+        <activity android:name="user.example.hs_pc013.switchapi.HX_2562" />
+        <activity android:name="user.example.hs_pc013.switchapi.Information" />
+        <activity android:name="user.example.hs_pc013.switchapi.Main4Activity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="user.example.hs_pc013.switchapi.MX_3UB" />
+        <activity android:name="user.example.hs_pc013.switchapi.MX_4UB" />
+        <activity android:name="user.example.hs_pc013.switchapi.MX_7UB" />
+        <activity android:name="user.example.hs_pc013.switchapi.SaveLoad" />
+        <activity android:name="user.example.hs_pc013.switchapi.SaveLoad_MX" />
+        <activity android:name="user.example.hs_pc013.switchapi.ScanList"
+            android:screenOrientation="portrait"/>
+        <activity android:name="user.example.hs_pc013.switchapi.SettingConfig" />
+        <activity android:name="user.example.hs_pc013.switchapi.SettingConfig3UB" />
+        <activity android:name="user.example.hs_pc013.switchapi.SettingConfig4UB" />
+        <activity android:name="user.example.hs_pc013.switchapi.SettingConfig7UB" />
+        <activity android:name="user.example.hs_pc013.switchapi.SettingConfig2544"></activity>
+    </application>
+
+</manifest>
